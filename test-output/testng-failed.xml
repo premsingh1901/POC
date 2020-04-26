@@ -6,7 +6,7 @@
       <class name="poc.com.testcases.POCTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validateTitle"/>
+          <include name="sumTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- poc.com.testcases.POCTest -->

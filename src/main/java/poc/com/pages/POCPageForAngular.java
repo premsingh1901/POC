@@ -4,11 +4,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
 import com.paulhammant.ngwebdriver.*;
 
-import poc.com.base.Base;
 
-public class POCPage extends Base {
+import poc.com.base.BaseForAngular;
+
+public class POCPageForAngular extends BaseForAngular {
 	
 		
 	
@@ -29,6 +32,7 @@ public class POCPage extends Base {
 	@ByAngularModel.FindBy(model = "operator")
 	WebElement operator;
 	
+		
 	@ByAngularButtonText.FindBy(buttonText = "Go!")
 	WebElement buttonGo;
 
@@ -36,22 +40,21 @@ public class POCPage extends Base {
 	@FindBy(tagName="h2")
 	WebElement result;
 	
-	public String sumNum(String v1, String v2) 
+
+	
+	public String sumNum(String v1, String v2)
 	{
 		firstTextField.clear();
 		firstTextField.sendKeys(v1);
 		
-		operator.sendKeys("+");
+		//operator.sendKeys("+");
+		Select select=new Select(operator);
+		select.selectByVisibleText("+");
 		
 		secondTextField.clear();
 		secondTextField.sendKeys(v2);
 		buttonGo.click();
-		try {
-		Thread.sleep(2000);
-		}catch(Exception e)
-		{
-			e.printStackTrace();
-		}
+		ngDriver.waitForAngularRequestsToFinish();
 		System.out.println(result.getText());
 		return result.getText();
 		
@@ -61,7 +64,7 @@ public class POCPage extends Base {
 	
 	
 
-	public POCPage(){
+	public POCPageForAngular(){
 		PageFactory.initElements(driver, this);
 	}
 }

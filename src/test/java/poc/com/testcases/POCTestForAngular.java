@@ -6,13 +6,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import poc.com.base.Base;
-import poc.com.pages.POCPage;
+import poc.com.base.BaseForAngular;
 
-public class POCTest extends Base{
-	POCPage pocPage;
+import poc.com.pages.POCPageForAngular;
+
+public class POCTestForAngular extends BaseForAngular{
+	POCPageForAngular pocPage;
 	
-	public POCTest() {
+	public POCTestForAngular() {
 		super();	
 		
 	}
@@ -21,7 +22,7 @@ public class POCTest extends Base{
 	public void setUp()
 	{
 		intilization();
-		pocPage=new POCPage();
+		pocPage=new POCPageForAngular();
 	}
 	
 	@Test(priority = 1, enabled = false)
@@ -38,7 +39,7 @@ public class POCTest extends Base{
 	{
 		String result=pocPage.sumNum("10", "20");
 		Assert.assertEquals(result, "30");
-				
+		
 		
 	}
 	
