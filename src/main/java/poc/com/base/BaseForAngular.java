@@ -32,11 +32,7 @@ public class BaseForAngular {
 	static String currentDirectory = System.getProperty("user.dir");
 	String filePath=currentDirectory+"\\src\\main\\java\\poc\\com\\config\\config.Properties";
 	
-	/*
-	 * To get the NG Driver flavour
-	 */
-	
-	
+		
 	
 		
 	public BaseForAngular()
