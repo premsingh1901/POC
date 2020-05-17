@@ -42,14 +42,13 @@ public class POCPageForAngular extends BaseForAngular {
 	
 
 	
-	public String sumNum(String v1, String v2)
+	public String calValue(String v1, String v2, String action)
 	{
 		firstTextField.clear();
 		firstTextField.sendKeys(v1);
-		
 		//operator.sendKeys("+");
 		Select select=new Select(operator);
-		select.selectByVisibleText("+");
+		select.selectByVisibleText(action);
 		
 		secondTextField.clear();
 		secondTextField.sendKeys(v2);
@@ -60,9 +59,29 @@ public class POCPageForAngular extends BaseForAngular {
 		
 		
 	}
+	public String sumNum(String v1, String v2) 
+	{
+		firstTextField.clear();
+		firstTextField.sendKeys(v1);
+		
+		operator.sendKeys("+");
+		
+		secondTextField.clear();
+		secondTextField.sendKeys(v2);
+		buttonGo.click();
+		try {
+		Thread.sleep(2000);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		System.out.println(result.getText());
+		return result.getText();
+		
+		
+	}
 
-	
-	
+		
 
 	public POCPageForAngular(){
 		PageFactory.initElements(driver, this);

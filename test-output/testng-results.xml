@@ -1,25 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9352" started-at="2020-04-25T21:17:48 IST" finished-at="2020-04-25T21:17:57 IST">
+  <suite name="Default suite" duration-ms="61774" started-at="2020-05-17T06:28:26Z" finished-at="2020-05-17T06:29:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9352" started-at="2020-04-25T21:17:48 IST" finished-at="2020-04-25T21:17:57 IST">
-      <class name="poc.com.testcases.POCTestForAngular">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.POCTestForAngular@6c49835d]" name="setUp" is-config="true" duration-ms="6668" started-at="2020-04-25T21:17:48 IST" finished-at="2020-04-25T21:17:54 IST">
+    <test name="Default test" duration-ms="61774" started-at="2020-05-17T06:28:26Z" finished-at="2020-05-17T06:29:28Z">
+      <class name="poc.com.testcases.MultipleDataSet">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="3610" started-at="2020-05-17T06:28:27Z" finished-at="2020-05-17T06:28:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sumTest()[pri:2, instance:poc.com.testcases.POCTestForAngular@6c49835d]" name="sumTest" duration-ms="2618" started-at="2020-04-25T21:17:54 IST" finished-at="2020-04-25T21:17:57 IST">
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculator" duration-ms="2445" started-at="2020-05-17T06:28:31Z" data-provider="getDataFromExcel" finished-at="2020-05-17T06:28:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[+]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sumTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.POCTestForAngular@6c49835d]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-04-25T21:17:57 IST" finished-at="2020-04-25T21:17:57 IST">
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="213" started-at="2020-05-17T06:28:33Z" finished-at="2020-05-17T06:28:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- poc.com.testcases.POCTestForAngular -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="2541" started-at="2020-05-17T06:28:33Z" finished-at="2020-05-17T06:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculator" duration-ms="2592" started-at="2020-05-17T06:28:36Z" data-provider="getDataFromExcel" finished-at="2020-05-17T06:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="200" started-at="2020-05-17T06:28:39Z" finished-at="2020-05-17T06:28:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="2381" started-at="2020-05-17T06:28:39Z" finished-at="2020-05-17T06:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculator" duration-ms="2542" started-at="2020-05-17T06:28:41Z" data-provider="getDataFromExcel" finished-at="2020-05-17T06:28:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[*]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="261" started-at="2020-05-17T06:28:44Z" finished-at="2020-05-17T06:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="2295" started-at="2020-05-17T06:28:44Z" finished-at="2020-05-17T06:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculator" duration-ms="2737" started-at="2020-05-17T06:28:46Z" data-provider="getDataFromExcel" finished-at="2020-05-17T06:28:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="295" started-at="2020-05-17T06:28:49Z" finished-at="2020-05-17T06:28:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="2388" started-at="2020-05-17T06:28:49Z" finished-at="2020-05-17T06:28:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculatorMinus(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculatorMinus" duration-ms="2674" started-at="2020-05-17T06:28:52Z" data-provider="getDataFromExcelforMinus" finished-at="2020-05-17T06:28:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorMinus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="220" started-at="2020-05-17T06:28:54Z" finished-at="2020-05-17T06:28:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="2513" started-at="2020-05-17T06:28:55Z" finished-at="2020-05-17T06:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculatorMinus(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculatorMinus" duration-ms="7518" started-at="2020-05-17T06:28:57Z" data-provider="getDataFromExcelforMinus" finished-at="2020-05-17T06:29:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorMinus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="3198" started-at="2020-05-17T06:29:05Z" finished-at="2020-05-17T06:29:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="2696" started-at="2020-05-17T06:29:08Z" finished-at="2020-05-17T06:29:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="calculatorMinus(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculatorMinus" duration-ms="2442" started-at="2020-05-17T06:29:11Z" data-provider="getDataFromExcelforMinus" finished-at="2020-05-17T06:29:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [80] but found [-1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [80] but found [-1]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at poc.com.testcases.MultipleDataSet.calculatorMinus(MultipleDataSet.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorMinus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="215" started-at="2020-05-17T06:29:13Z" finished-at="2020-05-17T06:29:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="setUp" is-config="true" duration-ms="12306" started-at="2020-05-17T06:29:13Z" finished-at="2020-05-17T06:29:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="calculatorMinus(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="calculatorMinus" duration-ms="2539" started-at="2020-05-17T06:29:25Z" data-provider="getDataFromExcelforMinus" finished-at="2020-05-17T06:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [80] but found [58]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [80] but found [58]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at poc.com.testcases.MultipleDataSet.calculatorMinus(MultipleDataSet.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorMinus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@59ec2012]" name="tearDown" is-config="true" duration-ms="219" started-at="2020-05-17T06:29:28Z" finished-at="2020-05-17T06:29:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- poc.com.testcases.MultipleDataSet -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

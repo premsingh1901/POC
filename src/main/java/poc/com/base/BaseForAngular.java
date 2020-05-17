@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Driver;
+import java.sql.DriverManager;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -56,6 +57,8 @@ public class BaseForAngular {
 			if(browserName.equalsIgnoreCase("Chrome"))
 			{
 				System.setProperty("webdriver.chrome.driver",currentDirectory+"\\Drivers\\chromedriver.exe");
+				//WebDriverManager.chromedriver().version(“2.40”).setup(); 
+				
 				driver=new ChromeDriver();
 				javaScriptExecutor=(JavascriptExecutor)driver;
 				ngDriver=new NgWebDriver(javaScriptExecutor);
