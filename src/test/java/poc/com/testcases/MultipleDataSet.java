@@ -1,5 +1,7 @@
 package poc.com.testcases;
 
+import java.io.IOException;
+
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -37,13 +39,16 @@ public class MultipleDataSet extends BaseForAngular{
 	}
 	
 	@Test(priority = 1, dataProvider ="getDataFromExcel")
-	public void calculator(String value1,String value2, String value3, String value4)
+	public void calculator(String value1,String value2, String value3)
 		{
 
 		String result=pocPage.calValue(value1, value2, value3);
 		Assert.assertEquals(result, "30");
 		
+		
 	}
+	
+	
 	@DataProvider
 	public Object[][] getDataFromExcelforMinus() throws InvalidFormatException
 	{
@@ -51,17 +56,17 @@ public class MultipleDataSet extends BaseForAngular{
 		return data;
 	}
 	
-	@Test(priority = 2, dataProvider ="getDataFromExcelforMinus")
+	@Test(priority = 2, dataProvider ="getDataFromExcelforMinus", enabled=false)
 	public void calculatorMinus(String valueM1,String valueM2, String valueM3)
 		{
 
 		String result=pocPage.calValue(valueM1, valueM2, valueM3);
 		Assert.assertEquals(result, "80");
 		
+		
 	}
 	
-	
-	
+		
 	
 	@AfterMethod
 	public void tearDown()
