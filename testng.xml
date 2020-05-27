@@ -4,16 +4,18 @@
 
 <listeners>
         <listener class-name="poc.com.extentreportlistner.ExtentReporterNG"/>
-  </listeners>
+ </listeners>
   
   
   <test thread-count="5" name="Test">
     <classes>
+    <group name="smoke">
       
       <class name="poc.com.testcases.MultipleDataSet"/>
-      <!class name="poc.com.testcases.POCTestForAngular"/>
-      <!class name="poc.com.testcases.POCTest"/>
+      <class name="poc.com.testcases.POCTestForAngular"/>
+      <class name="poc.com.testcases.POCTest"/>
     </classes>
+    </group>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
 

@@ -13,8 +13,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.paulhammant.ngwebdriver.NgWebDriver;
+
+import poc.com.utils.WebEventListener;
 
 /**
  * @author SinghPre
@@ -26,6 +30,9 @@ public class BaseForAngular {
 	public static NgWebDriver ngDriver;
 	public static JavascriptExecutor javaScriptExecutor;
 	public static Properties prop;
+	public static EventFiringWebDriver eventListner;
+	public static WebEventListener eListner; 	
+	
 	
 	/*
 	 * To get the directory of the current user
@@ -77,6 +84,14 @@ public class BaseForAngular {
 				javaScriptExecutor=(JavascriptExecutor)driver;
 				ngDriver=new NgWebDriver(javaScriptExecutor);
 			}
+			
+			
+			
+			eventListner=new EventFiringWebDriver(driver);
+			eListner=new WebEventListener();
+			eventListner.register(eListner);
+			driver=eventListner;
+			
 			
 			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().window().maximize();

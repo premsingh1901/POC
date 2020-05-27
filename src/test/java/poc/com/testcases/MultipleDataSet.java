@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import poc.com.base.Base;
 import poc.com.base.BaseForAngular;
+import poc.com.dataproviders.DataProviders;
 import poc.com.pages.POCPageForAngular;
 import poc.com.utils.TestUtils;
 
@@ -31,21 +32,26 @@ public class MultipleDataSet extends BaseForAngular{
 		pocPage=new POCPageForAngular();
 	}
 	
-	@DataProvider
-	public Object[][] getDataFromExcel() throws InvalidFormatException
-	{
-		Object data[][] = TestUtils.getTestData("add");
-		return data;
-	}
+//	@DataProvider(name="test")
+//	public Object[][] getDataFromExcel() throws InvalidFormatException
+//	{
+//		Object data[][] = TestUtils.getTestData("add");
+//		return data;
+//	}
 	
-	@Test(priority = 1, dataProvider ="getDataFromExcel")
+	@Test(priority = 1, dataProvider ="getExcelData", dataProviderClass = DataProviders.class)
+	
 	public void calculator(String value1,String value2, String value3)
 		{
-
-		String result=pocPage.calValue(value1, value2, value3);
-		Assert.assertEquals(result, "30");
-		
-		
+		System.out.println("Before method and after method will always run");
+			if(value1.equals("50"))
+			{
+				
+	
+				String result=pocPage.calValue(value1, value2, value3);
+				Assert.assertEquals(result, "30");
+				
+			}
 	}
 	
 	

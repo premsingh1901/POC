@@ -25,7 +25,6 @@ public class POCPageForAngular extends BaseForAngular {
 	
 	@ByAngularModel.FindBy(model = "first")
 	WebElement firstTextField;
-	
 	@ByAngularModel.FindBy(model = "second")
 	WebElement secondTextField;
 	
