@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73" started-at="2020-05-22T13:42:59Z" finished-at="2020-05-22T13:42:59Z">
+  <suite name="Default suite" duration-ms="75489" started-at="2020-05-28T04:25:49Z" finished-at="2020-05-28T04:27:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73" started-at="2020-05-22T13:42:59Z" finished-at="2020-05-22T13:42:59Z">
-      <class name="Concept.DataProviderTest">
-        <test-method status="PASS" signature="getDataProviderData(int, int)[pri:0, instance:Concept.DataProviderTest@53b32d7]" name="getDataProviderData" duration-ms="12" started-at="2020-05-22T13:42:59Z" data-provider="uds" finished-at="2020-05-22T13:42:59Z">
+    <test name="Default test" duration-ms="75489" started-at="2020-05-28T04:25:49Z" finished-at="2020-05-28T04:27:04Z">
+      <class name="poc.com.testcases.MultipleDataSet">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="6101" started-at="2020-05-28T04:25:50Z" finished-at="2020-05-28T04:25:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="18" started-at="2020-05-28T04:25:56Z" data-provider="getExcelData" finished-at="2020-05-28T04:25:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="555" started-at="2020-05-28T04:25:56Z" finished-at="2020-05-28T04:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="2877" started-at="2020-05-28T04:25:57Z" finished-at="2020-05-28T04:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="19353" started-at="2020-05-28T04:25:59Z" data-provider="getExcelData" finished-at="2020-05-28T04:26:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="384" started-at="2020-05-28T04:26:19Z" finished-at="2020-05-28T04:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="2755" started-at="2020-05-28T04:26:19Z" finished-at="2020-05-28T04:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="5" started-at="2020-05-28T04:26:22Z" data-provider="getExcelData" finished-at="2020-05-28T04:26:22Z">
           <params>
             <param index="0">
               <value>
@@ -16,14 +78,56 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[10]]>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[*]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getDataProviderData -->
-        <test-method status="PASS" signature="getDataProviderData(int, int)[pri:0, instance:Concept.DataProviderTest@53b32d7]" name="getDataProviderData" duration-ms="5" started-at="2020-05-22T13:42:59Z" data-provider="uds" finished-at="2020-05-22T13:42:59Z">
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="4357" started-at="2020-05-28T04:26:22Z" finished-at="2020-05-28T04:26:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="3177" started-at="2020-05-28T04:26:26Z" finished-at="2020-05-28T04:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="1" started-at="2020-05-28T04:26:30Z" data-provider="getExcelData" finished-at="2020-05-28T04:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="4386" started-at="2020-05-28T04:26:30Z" finished-at="2020-05-28T04:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="3228" started-at="2020-05-28T04:26:34Z" finished-at="2020-05-28T04:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="10" started-at="2020-05-28T04:26:37Z" data-provider="getExcelData" finished-at="2020-05-28T04:26:37Z">
           <params>
             <param index="0">
               <value>
@@ -32,14 +136,110 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[200]]>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[+]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getDataProviderData -->
-      </class> <!-- Concept.DataProviderTest -->
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="469" started-at="2020-05-28T04:26:37Z" finished-at="2020-05-28T04:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="3090" started-at="2020-05-28T04:26:38Z" finished-at="2020-05-28T04:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="7761" started-at="2020-05-28T04:26:41Z" data-provider="getExcelData" finished-at="2020-05-28T04:26:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="435" started-at="2020-05-28T04:26:48Z" finished-at="2020-05-28T04:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="2985" started-at="2020-05-28T04:26:49Z" finished-at="2020-05-28T04:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="5" started-at="2020-05-28T04:26:52Z" data-provider="getExcelData" finished-at="2020-05-28T04:26:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="4342" started-at="2020-05-28T04:26:52Z" finished-at="2020-05-28T04:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="setUp" is-config="true" duration-ms="3415" started-at="2020-05-28T04:26:56Z" finished-at="2020-05-28T04:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calculator(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="calculator" duration-ms="5" started-at="2020-05-28T04:27:00Z" data-provider="getExcelData" finished-at="2020-05-28T04:27:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:poc.com.testcases.MultipleDataSet@1ce92674]" name="tearDown" is-config="true" duration-ms="4748" started-at="2020-05-28T04:27:00Z" finished-at="2020-05-28T04:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- poc.com.testcases.MultipleDataSet -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

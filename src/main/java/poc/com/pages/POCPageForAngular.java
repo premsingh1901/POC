@@ -52,7 +52,7 @@ public class POCPageForAngular extends BaseForAngular {
 		secondTextField.clear();
 		secondTextField.sendKeys(v2);
 		buttonGo.click();
-		ngDriver.waitForAngularRequestsToFinish();
+		ngDriver.waitForAngularRequestsToFinish(); // Importent
 		System.out.println(result.getText());
 		return result.getText();
 		
